@@ -389,8 +389,6 @@ margin-top: 2.5rem;
     height: 230px;
     background-color: #100F3D;
     border-radius: 15px;
-   /* padding-top: 2rem;
-   padding-bottom: 1rem; */
    padding: 2rem 1rem 1rem 2rem;
    box-shadow: 0 1px 3px 0 #2062AF;
    
@@ -417,7 +415,10 @@ margin-top: 2.5rem;
 }
 
 
+
+
 /* SKILLS PAGE STYLES */
+
 .skills-content{
     display: flex;
     flex-direction: column;
@@ -435,6 +436,10 @@ margin-top: 2.5rem;
     background-color:#fff ;
     border-radius: 20px;
     margin-top: 3rem;
+}
+.skills-intro h1{
+    color: #36C0C9;
+  
 }
 .skills-box{
     display: flex;
