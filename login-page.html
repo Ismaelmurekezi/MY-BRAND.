@@ -16,18 +16,28 @@
    <div class="wrapper">
     <div class="login-form">
         <h1 class="login-title">WELCOME TO LOGIN PAGE</h1>
-        <form action="">
+        <form action="" class="form">
+            <i class="fa-solid fa-user" id="usericon"></i>
           <input type="text"  placeholder=" Username"> <br>
-          <!-- <i class="fa-solid fa-user"></i> -->
+          <i class="fa-solid fa-lock" id="passwordIcon"></i>
           <input type="password" placeholder="Password"> <br>
-          <!-- <i class="fa-solid fa-eye"></i> -->
         <input type="button" class="login-btn" value="Login">
         </form>
-        <p>Don't have an account? <span>Sign up</span></p>
+        <p>Don't have an account? <span><a href="./signup-page.html">Sign up</a></span></p>
     </div>
-    <img src="./images/handshake.jpg" alt="login-image">
+    <img src="./images/handshake.jpg" alt="login-image" id="login-image">
 </div> 
-<button class="return-btn"><i class="fa-solid fa-house"></i>BACK TO HOME</button>
+<button class="return-btn"><a href="./home-page.html"><i class="fa-solid fa-house" id="homeIcon"></i>BACK TO HOME</a></button>
+
+<!-- <i class="fa-brands fa-github"></i>
+<i class="fa-brands fa-linkedin"></i>
+<i class="fa-thin fa-phone"></i>
+<i class="fa-thin fa-comment"></i>
+<i class="fa-light fa-user"></i>
+<i class="fa-thin fa-thumbs-up"></i>
+<i class="fa-solid fa-thumbs-up"></i> 
+<i class="fa-thin fa-envelope"></i>
+<i class="fa-solid fa-user"></i> -->
 <script src="https://kit.fontawesome.com/ffd0b0bd60.js" crossorigin="anonymous"></script>
 </body>
 </html>

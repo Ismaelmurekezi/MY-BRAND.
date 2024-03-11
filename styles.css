@@ -17,6 +17,7 @@ body{
 }
 
 
+
 /* HEADER STYLES */
 
 .hamburger-menu{
@@ -32,6 +33,8 @@ body{
 }
 
 .header{
+    height: 100px;
+    width: 100%;
     display: flex;
 align-items: center;
 
@@ -57,7 +60,7 @@ align-items: center;
 }
 .nav-links a:hover{
     color: aquamarine;
-    font-size: 22px;
+    font-size: 18px;
 
 }
 
@@ -508,11 +511,124 @@ margin-top: 10px;
     border-radius: 0 0 10px 10px;
 }
 
+
+/* BLOG DETAIL PAGE */
+
+.blog-detail-wrapper{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+
+}
+.blog-contents{
+    display: flex;
+    justify-content:space-around;
+    margin-bottom: 2rem;
+}
+.more-detail-blog{
+  width: 50%;
+}
+
+.more-detail-blog h2{
+   color: #36C0C9;
+   font-size: 28px;
+   padding-bottom: 1rem;
+  }
+  .blog-titles, .blog-title{
+    color: #36C0C9;
+    font-weight: 500;
+    padding-bottom: 0.5rem;
+  }
+
+  .article{
+    padding-bottom: 20px;
+}
+
+.blog-form{
+    margin-left: 4rem;
+    width: 600px;
+    height: 500px;
+    background-color: #100F3D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+.blog-form h3{
+    margin: 2rem 0;
+    color: #36C0C9;
+}
+
+.blog-form input{
+    width: 350px;
+height: 35px;
+margin-bottom: 5px;
+font-size: 16px;
+border: none;
+border-radius: 5px;
+padding-left: 4rem;
+margin-bottom: 20px;
+font-family: 'poppins';
+}
+
+.blog-image{
+    width: 600px;
+    height: 400px;
+    margin-top: 4rem;
+}
+figcaption{
+    width: 600px;
+    color: #959090;
+}
+.key-take-container{
+    margin-top: 2rem;
+}
+
+.key-take{
+    color: #36C0C9;
+    font-size: 20px;
+}
+
+.key-take-like{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    height: 30px;
+}
+form{
+    position: relative;
+}
+
+#usericon{
+    position: absolute;
+    left: 1rem;
+    color:rgb(78, 76, 76);
+    top: 8px;
+
+    
+}
+#emailicon1{
+    position: absolute;
+    left: 1rem;
+    color:rgb(78, 76, 76);
+    top: 4rem;
+     
+}
+
+
+
+
+
+
+
+
+
+
 /* MEDIA QUERIES */
 
 
 
-@media only screen and (max-width: 600px)  {
+@media only screen and (max-width: 600px) and (max-width:768px)  {
 
     /* HEADER  */
     .header{
@@ -526,25 +642,6 @@ margin-top: 10px;
     .hamburger-menu{
         display: block;
     }
- /* .nav-links{
-    display: flex;
-    flex-direction: column;
-   gap: 10px;
-   font-size: 15px;
-  z-index:-1;
-padding:25px 50px;
-  text-align: center;
- border-radius: 10px;
-  background-color: #bdbcd1;
-  position: absolute;
-  top:4rem;
-  right: 15px;
-
- }
- .nav-links a:hover{
-    color: aquamarine;
-    font-size: 16px;
-} */
 
  .content{
     display: flex;
@@ -556,16 +653,18 @@ padding:25px 50px;
 
  margin-left: 2rem;
  order: 2;
+padding-right: 10px;
  }
 .intro-section>p{
-    font-size: 14px;
+    font-size: 16px;
  }
 
  #profile-image{
   
     order: 1;
-   margin-bottom: 2rem;
+   margin-bottom: 4rem;
    z-index: 1;
+
  }
  .brand{
     width: 80px;
@@ -707,29 +806,41 @@ gap: 1rem;
     .hamburger-menu{
         display: block;
     }
- .nav-links{
+   
+    #navLinks{
+display: flex;
+flex-direction: column;
+
+    }
+
+.nav-links.show {
     display: flex;
     flex-direction: column;
-   gap: 15px;
-   font-size: 18px;
-  z-index:-1;
-  padding:30px 80px;
-  text-align: center;
-  background-color: #100F3D;
-   border-radius: 10px;
-  position: absolute;
-  top:4rem;
-  right: 15px;
-  display: none;
- }
+    gap: 15px;
+    font-size: 18px;
+    padding: 30px 80px;
+    text-align: center;
+    background-color: #100F3D;
+    border-radius: 10px;
+    position: absolute;
+    top: 4rem;
+    right: 15px;
+    }
 
- /* .links{
-    display: none;
- } */
- /* .nav-links a:hover{
-    color: aquamarine;
-    font-size: 16px;
-} */
+    .nav-links{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        font-size: 18px;
+        padding: 30px 80px;
+        text-align: center;
+        background-color:rgba(0, 0, 0, 0);
+        border-radius: 10px;
+        position: absolute;
+        top: -20rem;
+   
+        }
+
 
 
  .content{
@@ -877,7 +988,7 @@ gap: 1rem;
         justify-content: center;
        flex-wrap: wrap;
       }
-    
+ 
     
   }
 

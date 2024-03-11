@@ -1,11 +1,14 @@
-const hamburgerIcon=document.getElementById("hamburger-menu");
-const hamburgerIcon1=document.getElementById("hamburger-menu1");
-let navLinks=document.getElementById("nav-links");
+const hamburgerMenu = document.getElementById('hamburgerMenu');
+const navLinks = document.getElementById('navLinks');
 
+hamburgerMenu.addEventListener('click', () => {
+    if (navLinks.classList.contains('show')) {
+        navLinks.classList.remove('show');
+      
+    } else {
+        navLinks.classList.add('show');
 
-hamburgerIcon.addEventListener('click',()=>{
-    navLinks ?     navLinks.style.display='none':    menu.style.display='block'
+    }
 
-})
-
+});
 
